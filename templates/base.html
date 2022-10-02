@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/styles/style.css" />
+        <title>{% block title %}Home{% endblock %}</title>
+    </head>
+    <body>
+        <header class="top">Spotisky</header>
+        {% block content %}
+        <div class = 'sun astro-sign'>
+            <div class="content-head">
+                
+                <h1>Sun</h1>
+                <img src="../static/styles/images/sun.png">
+            </div>
+            <div class="content-body">
+                <img src={{data[1][2]}}>
+                <header class="song-title">{{data[1][0]}}</header>
+                <p class="artist">By {{data[1][1]}}</p>
+                <p class="description">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc"
+                </p>
+            </div>
+        </div>
+
+        <div class = 'moon astro-sign'>
+            <div class="content-head">
+                
+                <h1>Moon</h1>
+                <img src="../static/styles/images/moon.png">
+            </div>
+            <div class="content-body">
+                <img src={{data[2][2]}}>
+                <header class="song-title">{{data[2][0]}}</header>
+                <p class="artist">By {{data[2][1]}}</p>
+                <p class="description">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc"
+                </p>
+            </div>
+        </div>
+
+        <div class = 'rising astro-sign'>
+            <div class="content-head">
+                
+                <h1>Rising</h1>
+                <img src="../static/styles/images/mask-removebg-preview.png">
+            </div>
+            <div class="content-body">
+                <img src={{data[0][2]}}>
+                <header class="song-title">{{data[0][0]}}</header>
+                <p class="artist">{{data[0][1]}}</p>
+                <p class="description">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc"
+                </p>
+            </div>
+        </div>
+
+        <div class = 'venus astro-sign'>
+            <div class="content-head">
+                
+                <h1>Venus</h1>
+                <img src="../static/styles/images/venus-removebg-preview.png">
+            </div>
+            <div class="content-body">
+                <img src={{data[3][2]}}>
+                <header class="song-title">{{data[3][0]}}</header>
+                <p class="artist">{{data[3][1]}}</p>
+                <p class="description">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc"
+                </p>
+            </div>
+        </div>
+
+        <div class = 'mars astro-sign'>
+            <div class="content-head">
+                
+                <h1>Mars</h1>
+                <img src="../static/styles/images/mars-removebg-preview.png">
+            </div>
+            <div class="content-body">
+                <img src={{data[4][2]}}>
+                <header class="song-title">{{data[4][0]}}</header>
+                <p class="artist">{{data[4][1]}}</p>
+                <p class="description">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc"
+                </p>
+            </div>
+        </div>
+        {% endblock %}
+        <footer>
+            
+            HowdyHack 2022
+
+            <a href="https://www.instagram.com/linhxnguyen/">
+                <img class='social-img'src="../static/styles/images/insta-removebg-preview.png">
+            </a>
+
+        </footer>
+    </body>
+</html>
