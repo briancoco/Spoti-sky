@@ -1,6 +1,8 @@
 body {
-    background-image: url("images/back.jpeg");
-    background-size: cover;
+    background-image: url("images/26098f2f9172964db70a8accf4dd9d7f.jpeg");
+    background-color: #e9e7e1;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
     padding:0;
     margin:0;
@@ -61,5 +63,5 @@ p {
 }
 
 .container:hover {
-    transform: translateY(-5px);
+    transform: translateY(-25px);
 }

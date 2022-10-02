@@ -191,7 +191,7 @@ def get_token():
     if not token_info:
         raise "exception"
     now = int(time.time())
-    is_expired = token_info['expires_at'] - now < 60
+    is_expired = token_info['expires_at'] - now <= 100
     if (is_expired):
         sp_auth = create_spotify_auth()
         token_info = sp_auth.refresh_access_token(token_info['refresh_token'])
